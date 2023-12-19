@@ -1,10 +1,38 @@
+import Image from 'next/image';
 import Link from 'next/link'
 import React from 'react'
 import { FaArrowRight, FaBriefcase, FaDownload, FaMailBulk } from 'react-icons/fa'
+import { LuSendHorizonal } from "react-icons/lu";
 
 const Articles = () => {
+    const WorkExperience = [
+        {
+            title: 'Freelance',
+            role: 'Remote',
+            date: 'March 2023',
+            imageurl: "/freelance_banking.jpeg"
+        },
+        {
+            title: 'Claas',
+            role: 'Software Engineer (Intern)',
+            date: 'August - October 2023',
+            imageurl: "/claas.png"
+        },
+        {
+            title: 'MTAB Technology Center',
+            role: 'Web Developer (Intern)',
+            date: 'November 2023',
+            imageurl: "/mtab.png"
+        },
+        {
+            title: 'Collab Junction',
+            role: 'Founder & CTO',
+            date: 'May 2023 - Present',
+            imageurl: "/cj.webp"
+        },
+    ]
     return (
-        <div className='flex lg:flex-row flex-col pt-[400px]'>
+        <div className='flex lg:flex-row flex-col pt-[450px]'>
             <div className='space-y-10 lg:w-[70%] w-full my-4'>
                 <div className="relative flex flex-col items-start">
                     <h2 className="text-base font-semibold tracking-tight text-zinc-100">
@@ -88,7 +116,15 @@ const Articles = () => {
                         <FaMailBulk />
                         <span className="ml-3">Stay up to date</span>
                     </h2>
-                    <p className="mt-2 text-sm text-zinc-400">Get notified when I publish something new, and unsubscribe at any time.</p>
+                    <p className="mt-2 text-sm text-zinc-400">Contact me through mail</p>
+
+                    <div className='text-xs mt-3 border-2 border-zinc-700/40 rounded-lg p-2 px-4 text-zinc-400 flex justify-between items-center'>
+                        <div>
+                            hiarjun.malhotra2002@gmail.com
+                        </div>
+
+                        <LuSendHorizonal />
+                    </div>
                 </div>
 
                 <div>
@@ -99,22 +135,21 @@ const Articles = () => {
                         </h2>
 
                         <div className="mt-6 space-y-4">
-                            <div className="flex gap-4">
-                                <div className="flex flex-auto flex-wrap gap-x-2">
-                                    <div className="w-full flex-none text-sm font-medium text-zinc-100">Planetaria</div>
-                                    <div className="text-xs text-zinc-400">CEO</div>
-                                    <div className="ml-auto text-xs text-zinc-500 flex space-x-2">
-                                        <div>2019</div>
-                                        <span>—</span>
-                                        <div>Present</div>
+                            {WorkExperience.map((entry, index) => (
+                                <div key={index} className="flex gap-4 items-center">
+                                    <Image src={`${entry.imageurl}`} className='rounded-full object-cover bg-zinc-800 h-6 w-6' alt='' width={512} height={512} />
+                                    <div className="flex flex-auto flex-wrap gap-x-2">
+                                        <div className="w-full flex-none text-sm font-medium text-zinc-100">{entry.title}</div>
+                                        <div className="text-xs text-zinc-400">{entry.role}</div>
+                                        <div className="ml-auto text-xs text-zinc-500 flex space-x-2">{entry.date}</div>
                                     </div>
                                 </div>
-                            </div>
+                            ))}
                         </div>
-                        <a className="inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none bg-zinc-50 font-medium active:bg-zinc-100 bg-zinc-800/50 text-zinc-300 hover:bg-zinc-800 hover:text-zinc-50 active:bg-zinc-800/50 active:text-zinc-50/70 group mt-6 w-full" href="#">
+                        <Link className="inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none bg-zinc-50 font-medium active:bg-zinc-100 bg-zinc-800/50 text-zinc-300 hover:bg-zinc-800 hover:text-zinc-50 active:bg-zinc-800/50 active:text-zinc-50/70 group mt-6 w-full" href="#">
                             Download CV
                             <FaDownload />
-                        </a>
+                        </Link>
                     </div>
 
                 </div>
