@@ -5,41 +5,39 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { FaArrowDown, FaArrowUp, FaRegMinusSquare } from "react-icons/fa"
 import { IoClose } from "react-icons/io5";
+import { usePathname } from 'next/navigation'
 
 export const links = [
     {
         name: "About",
-        hash: "#about",
+        hash: "/",
     },
     {
         name: "Articles",
-        hash: "#articles",
+        hash: "/articles",
     },
     {
         name: "Projects",
-        hash: "#projects",
+        hash: "/projects",
     },
     {
         name: "Speaking",
-        hash: "#speaking",
-    },
-    {
-        name: "Uses",
-        hash: "#uses",
+        hash: "/speaking",
     }
 ];
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
+    const pathname = usePathname();
 
     return (
         <header className="z-[999] relative">
             <motion.div
-                className="hidden sm:flex fixed left-1/2 h-[2.3rem] bg-[#27272AE6] ring-1 ring-zinc-300/20 top-6 w-[25rem] rounded-full"
+                className="hidden sm:flex fixed left-1/2 h-[2.3rem] bg-[#27272AE6] ring-1 ring-zinc-300/20 top-6 w-[22rem] rounded-full"
                 initial={{ y: -100, x: "-50%", opacity: 0 }}
                 animate={{ y: 0, x: "-50%", opacity: 1 }}
             ></motion.div>
-
+            
             <div className="sm:hidden flex justify-end items-end bg-[#18181b]">
                 <button
                     onClick={() => setIsOpen(!isOpen)}
@@ -50,21 +48,22 @@ export default function Header() {
                     </div>
 
                     <div>
-                        {!isOpen ? <FaArrowDown size={12}/> : <FaArrowUp size={12}/>}
+                        {!isOpen ? <FaArrowDown size={12} /> : <FaArrowUp size={12} />}
                     </div>
                 </button>
             </div>
 
             <nav className="flex flex-col lg:flex-row fixed left-1/2 -translate-x-1/2 top-[1.2rem]">
-                <ul className="hidden sm:flex sm:flex-row w-[20rem] items-center justify-center gap-y-2 text-[14px] font-medium flex-nowrap">
+                <ul className="hidden sm:flex sm:flex-row w-[15rem] items-center justify-center gap-y-2 text-[14px] font-medium flex-nowrap">
                     {links.map((link) => (
                         <motion.li
+                            key={link.hash}
                             className="h-3/4 flex items-center justify-center relative"
                             initial={{ y: -100, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
                         >
                             <Link
-                                className="flex w-full items-center justify-center px-3 py-3 transition text-[#E4E4E7] hover:text-gray-500"
+                                className={`flex w-full items-center justify-center px-3 py-3 transition text-[#E4E4E7] hover:text-gray-500 ${pathname === link.hash ? "text-teal-400" : ""}`}
                                 href={link.hash}
                             >
                                 {link.name}

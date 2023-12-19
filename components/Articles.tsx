@@ -4,7 +4,7 @@ import { FaArrowRight, FaBriefcase, FaDownload, FaMailBulk } from 'react-icons/f
 
 const Articles = () => {
     return (
-        <div className='flex lg:flex-row flex-col'>
+        <div className='flex lg:flex-row flex-col pt-[400px]'>
             <div className='space-y-10 lg:w-[70%] w-full my-4'>
                 <div className="relative flex flex-col items-start">
                     <h2 className="text-base font-semibold tracking-tight text-zinc-100">

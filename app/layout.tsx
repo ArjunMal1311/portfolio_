@@ -15,7 +15,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        {children}
+        <div className='bg-black flex justify-center'>
+          <div className='bg-[#18181b] w-[1200px] ring-1 ring-zinc-300/20 sm:px-20 px-8 sm:py-28 py-16 space-y-16 min-h-screen h-fit overflow-hidden'>
+            {children}
+          </div>
+        </div>
       </body>
     </html>
   )
