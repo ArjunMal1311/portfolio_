@@ -19,3 +19,31 @@
     transform: rotate(360deg);
   }
 }
+
+
+.logos-slide {
+  animation: 40s slide infinite linear;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 150px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}

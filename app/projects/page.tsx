@@ -67,6 +67,7 @@ const ProjectPage = () => {
                 </p>
             </div>
 
+           
             <div className='mt-16 flex flex-wrap md:flex-row flex-col pr-3'>
                 {projects.map((project, index) => (
                     <div key={index} className="group relative flex flex-col items-start md:w-[28%] w-full m-5 my-10">

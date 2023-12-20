@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { FaArrowDown, FaArrowUp, FaRegMinusSquare } from "react-icons/fa"
-import { IoClose } from "react-icons/io5";
 import { usePathname } from 'next/navigation'
 
 export const links = [
@@ -21,8 +20,8 @@ export const links = [
         hash: "/projects",
     },
     {
-        name: "Speaking",
-        hash: "/speaking",
+        name: "Skills",
+        hash: "/skills",
     }
 ];
 
