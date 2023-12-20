@@ -15,7 +15,7 @@ const Introduction = () => {
 
             <div className='max-w-3xl'>
                 <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-                    Hello! I'm Arjun Malhotra, an undergrad at Vellore Institute of Technology. Passionate about programming and problem-solving, my tech stack includes React, Next.js, Node.js, MongoDB, TypeScript, and Prisma. Proficient in machine learning with Python and C++, I'm actively seeking opportunities in software engineering. Let's connect and collaborate on innovative projects!</p>
+                    Hello! I'm Arjun Malhotra, an undergrad at Vellore Institute of Technology. Passionate about programming and problem-solving, my tech stack includes React, Next.js, Node.js, MongoDB, TypeScript, and Prisma. Proficient in machine learning with Python, I'm actively seeking opportunities in software engineering. Let's connect and collaborate on innovative projects!</p>
             </div>
 
             <div className='flex space-x-6'>

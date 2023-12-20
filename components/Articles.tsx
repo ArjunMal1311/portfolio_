@@ -26,88 +26,70 @@ const Articles = () => {
         },
         {
             title: 'Collab Junction',
-            role: 'Founder & CTO',
+            role: 'Co-founder & CTO',
             date: 'May 2023 - Present',
             imageurl: "/cj.webp"
         },
     ]
+
+    const articlesData = [
+        {
+            title: "Hackathon Mentorship: Nurturing Innovation at VIT Vellore",
+            date: "June 2023",
+            content: `
+            I served as a mentor at an innovative Hackathon co-hosted by the Entrepreneurship Cell (E-Cell) and ISTE at VIT. My role involved advising participants on enhancing the feasibility and stability of their projects.
+          `,
+        },
+        {
+            title: "Unmasking the Shadows: A Dive into Online Payment Fraud Detection with Machine Learning",
+            date: "August 2023 - October 2023",
+            content: `
+            In the realm of technology and data, the battle against online payment fraud has become an intricate dance between security measures and evolving deceptive tactics. My foray into this dynamic landscape involved harnessing the power of machine learning to detect and combat fraudulent activities.
+          `,
+        },
+        {
+            title: "Revolutionizing Feedback: Enhancing Employee Engagement at Claas",
+            date: "August - October 2023",
+            content: `
+            During my tenure at Claas, I played a pivotal role in creating a robust feedback system. This system empowers employees to provide suggestions for improving company processes. Approved suggestions are rewarded, fostering a culture of innovation and continuous improvement within the organization.
+          `,
+        },
+        {
+            title: "Internship at MTAB Technology Center: Elevating Landing Page, SEO, and Marketing Automation",
+            date: "November 2023",
+            content: `
+              During my internship at MTAB Technology Center, I focused on enhancing their landing page and SEO strategies. Additionally, I actively contributed to the implementation of marketing automation for their software, streamlining and optimizing the marketing processes.
+            `,
+        },
+        {
+            title: "CollabJunction: Spearheading Technical Initiatives Remotely",
+            date: "May 2023 - Now",
+            content: `
+            I currently hold the position of Technical Head at CollabJunction, a company dedicated to facilitating collaboration among businesses, colleges and artists. My role involves spearheading technical initiatives to enhance collaborative capabilities.
+          `,
+        },
+    ];
     return (
         <div className='flex lg:flex-row flex-col pt-[450px]'>
             <div className='space-y-10 lg:w-[70%] w-full my-4'>
-                <div className="relative flex flex-col items-start">
-                    <h2 className="text-base font-semibold tracking-tight text-zinc-100">
-                        <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
-                        <Link href="/articles/crafting-a-design-system-for-a-multiplanetary-future">
-                            <span className="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
-                            <span className="relative z-10">Crafting a design system for a multiplanetary future</span>
-                        </Link>
-                    </h2>
-
-                    <div className="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-500 pl-3.5">
-                        <span className="absolute inset-y-0 left-0 flex items-center h-5 w-0.5 rounded-full bg-zinc-500"></span>
-                        <div>September 5, 2022</div>
-                    </div>
-
-                    <p className="relative z-10 mt-2 text-sm text-zinc-400">Most companies try to stay ahead of the curve when it comes to visual design, but for Planetaria, we needed to create a brand that would still inspire us 100 years from now when humanity has spread across our entire solar system.</p>
-                    <div aria-hidden="true" className="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500">
-                        <Link href="/articles/" className='flex items-center space-x-2'>
+                {articlesData.map((article, index) => (
+                    <div key={index} className='relative flex flex-col items-start'>
+                        <h2 className='text-base font-semibold tracking-tight text-zinc-100'>
+                            <div className='absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl'></div>
                             <div>
-                                Read article
+                                <span className='absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl'></span>
+                                <span className='relative z-10'>{article.title}</span>
                             </div>
-                            <FaArrowRight />
-                        </Link>
+                        </h2>
+
+                        <div className='relative z-10 order-first mb-3 flex items-center text-sm text-zinc-500 pl-3.5'>
+                            <span className='absolute inset-y-0 left-0 flex items-center h-5 w-0.5 rounded-full bg-zinc-500'></span>
+                            <div>{article.date}</div>
+                        </div>
+
+                        <p className='relative z-10 mt-2 text-sm text-zinc-400'>{article.content}</p>
                     </div>
-                </div>
-
-                <div className="relative flex flex-col items-start">
-                    <h2 className="text-base font-semibold tracking-tight text-zinc-100">
-                        <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
-                        <Link href="/articles/">
-                            <span className="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
-                            <span className="relative z-10">Crafting a design system for a multiplanetary future</span>
-                        </Link>
-                    </h2>
-
-                    <div className="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-500 pl-3.5">
-                        <span className="absolute inset-y-0 left-0 flex items-center h-5 w-0.5 rounded-full bg-zinc-500"></span>
-                        <div>September 5, 2022</div>
-                    </div>
-
-                    <p className="relative z-10 mt-2 text-sm text-zinc-400">Most companies try to stay ahead of the curve when it comes to visual design, but for Planetaria, we needed to create a brand that would still inspire us 100 years from now when humanity has spread across our entire solar system.</p>
-                    <div aria-hidden="true" className="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500">
-                        <Link href="/articles/" className='flex items-center space-x-2'>
-                            <div>
-                                Read article
-                            </div>
-                            <FaArrowRight />
-                        </Link>
-                    </div>
-                </div>
-
-                <div className="relative flex flex-col items-start">
-                    <h2 className="text-base font-semibold tracking-tight text-zinc-100">
-                        <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
-                        <Link href="/articles/crafting-a-design-system-for-a-multiplanetary-future">
-                            <span className="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
-                            <span className="relative z-10">Crafting a design system for a multiplanetary future</span>
-                        </Link>
-                    </h2>
-
-                    <div className="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-500 pl-3.5">
-                        <span className="absolute inset-y-0 left-0 flex items-center h-5 w-0.5 rounded-full bg-zinc-500"></span>
-                        <div>September 5, 2022</div>
-                    </div>
-
-                    <p className="relative z-10 mt-2 text-sm text-zinc-400">Most companies try to stay ahead of the curve when it comes to visual design, but for Planetaria, we needed to create a brand that would still inspire us 100 years from now when humanity has spread across our entire solar system.</p>
-                    <div aria-hidden="true" className="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500">
-                        <Link href="/articles/crafting-a-design-system-for-a-multiplanetary-future" className='flex items-center space-x-2'>
-                            <div>
-                                Read article
-                            </div>
-                            <FaArrowRight />
-                        </Link>
-                    </div>
-                </div>
+                ))}
             </div>
 
             <div className='lg:p-4 my-10 space-y-5'>
