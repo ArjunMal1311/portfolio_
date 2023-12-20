@@ -14,7 +14,7 @@ const Articles = () => {
         },
         {
             title: 'Claas',
-            role: 'Software Engineer (Intern)',
+            role: 'Intern Developer',
             date: 'August - October 2023',
             imageurl: "/claas.png"
         },
@@ -70,12 +70,12 @@ const Articles = () => {
         },
     ];
     return (
-        <div className='flex lg:flex-row flex-col pt-[450px]'>
-            <div className='space-y-10 lg:w-[70%] w-full my-4'>
+        <div className='flex lg:flex-row flex-col sm:pt-[450px] pt-[280px]'>
+            <div className='space-y-10 lg:w-[70%] w-full my-4 mr-4'>
                 {articlesData.map((article, index) => (
-                    <div key={index} className='relative flex flex-col items-start'>
+                    <div key={index} className='relative flex flex-col items-start p-4 group'>
                         <h2 className='text-base font-semibold tracking-tight text-zinc-100'>
-                            <div className='absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl'></div>
+                            <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
                             <div>
                                 <span className='absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl'></span>
                                 <span className='relative z-10'>{article.title}</span>
