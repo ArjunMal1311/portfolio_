@@ -70,7 +70,7 @@ const Articles = () => {
         },
     ];
     return (
-        <div className='flex lg:flex-row flex-col sm:pt-[450px] pt-[280px]'>
+        <div className='flex lg:flex-row flex-col sm:pt-[450px] pt-[20px]'>
             <div className='space-y-10 lg:w-[70%] w-full my-4 mr-4'>
                 {articlesData.map((article, index) => (
                     <div key={index} className='relative flex flex-col items-start p-4 group'>
