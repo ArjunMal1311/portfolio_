@@ -70,28 +70,7 @@ const Articles = () => {
         },
     ];
     return (
-        <div className='flex lg:flex-row flex-col sm:pt-[450px] pt-[20px]'>
-            <div className='space-y-10 lg:w-[70%] w-full my-4 mr-4'>
-                {articlesData.map((article, index) => (
-                    <div key={index} className='relative flex flex-col items-start p-4 group'>
-                        <h2 className='text-base font-semibold tracking-tight text-zinc-100'>
-                            <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
-                            <div>
-                                <span className='absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl'></span>
-                                <span className='relative z-10'>{article.title}</span>
-                            </div>
-                        </h2>
-
-                        <div className='relative z-10 order-first mb-3 flex items-center text-sm text-zinc-500 pl-3.5'>
-                            <span className='absolute inset-y-0 left-0 flex items-center h-5 w-0.5 rounded-full bg-zinc-500'></span>
-                            <div>{article.date}</div>
-                        </div>
-
-                        <p className='relative z-10 mt-2 text-sm text-zinc-400'>{article.content}</p>
-                    </div>
-                ))}
-            </div>
-
+        <div className='flex lg:flex-row flex-col sm:pt-[450px] pt-[380px]'>
             <div className='lg:p-4 my-10 space-y-5'>
                 <div className='rounded-2xl border p-6 border-zinc-700/40'>
                     <h2 className="flex text-sm font-semibold text-zinc-100">
@@ -136,6 +115,29 @@ const Articles = () => {
 
                 </div>
             </div>
+            
+            <div className='space-y-10 lg:w-[70%] w-full my-4 mr-4'>
+                {articlesData.map((article, index) => (
+                    <div key={index} className='relative flex flex-col items-start p-4 group'>
+                        <h2 className='text-base font-semibold tracking-tight text-zinc-100'>
+                            <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
+                            <div>
+                                <span className='absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl'></span>
+                                <span className='relative z-10'>{article.title}</span>
+                            </div>
+                        </h2>
+
+                        <div className='relative z-10 order-first mb-3 flex items-center text-sm text-zinc-500 pl-3.5'>
+                            <span className='absolute inset-y-0 left-0 flex items-center h-5 w-0.5 rounded-full bg-zinc-500'></span>
+                            <div>{article.date}</div>
+                        </div>
+
+                        <p className='relative z-10 mt-2 text-sm text-zinc-400'>{article.content}</p>
+                    </div>
+                ))}
+            </div>
+
+
         </div>
     )
 }
