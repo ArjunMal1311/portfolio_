@@ -120,7 +120,7 @@ const Carousel = () => {
                                 console.log("Why do JavaScript developers go insane?");
                             </div>
                             <div className="res error">
-                                <span>Error</span>{" Because they don't know how to null his feelings. 😵💻"}
+                                <span>Error</span>{" Because they don't know how to null their feelings. 😵💻"}
                             </div>
                             <div className="res ">
                                 <div className='text-blue-400'> True</div>
