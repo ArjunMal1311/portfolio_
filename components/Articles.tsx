@@ -4,71 +4,68 @@ import React from 'react'
 import { FaArrowRight, FaBriefcase, FaDownload, FaMailBulk } from 'react-icons/fa'
 import { LuSendHorizonal } from "react-icons/lu";
 
-const Articles = () => {
-    const WorkExperience = [
-        {
-            title: 'Freelance',
-            role: 'Remote',
-            date: 'March 2023',
-            imageurl: "/freelance_banking.jpeg"
-        },
-        {
-            title: 'Claas',
-            role: 'Intern Developer',
-            date: 'August - October 2023',
-            imageurl: "/claas.png"
-        },
-        {
-            title: 'MTAB Technology Center',
-            role: 'Web Developer (Intern)',
-            date: 'November 2023',
-            imageurl: "/mtab.png"
-        },
-        {
-            title: 'Collab Junction',
-            role: 'Co-founder & CTO',
-            date: 'May 2023 - Present',
-            imageurl: "/cj.webp"
-        },
-    ]
+const WorkExperience = [
+    {
+        title: 'Freelance',
+        role: 'Remote',
+        date: 'March 2023',
+        imageurl: "/freelance_banking.jpeg"
+    },
+    {
+        title: 'Claas',
+        role: 'Intern Developer',
+        date: 'August - October 2023',
+        imageurl: "/claas.png"
+    },
+    {
+        title: 'MTAB Technology Center',
+        role: 'Web Developer (Intern)',
+        date: 'November 2023',
+        imageurl: "/mtab.png"
+    },
+    {
+        title: 'Collab Junction',
+        role: 'Co-founder & CTO',
+        date: 'May 2023 - Present',
+        imageurl: "/cj.webp"
+    },
+]
 
-    const articlesData = [
-        {
-            title: "Hackathon Mentorship: Nurturing Innovation at VIT Vellore",
-            date: "June 2023",
-            content: `
-            I served as a mentor at an innovative Hackathon co-hosted by the Entrepreneurship Cell (E-Cell) and ISTE at VIT. My role involved advising participants on enhancing the feasibility and stability of their projects.
-          `,
-        },
-        {
-            title: "Unmasking the Shadows: A Dive into Online Payment Fraud Detection with Machine Learning",
-            date: "August 2023 - October 2023",
-            content: `
-            In the realm of technology and data, the battle against online payment fraud has become an intricate dance between security measures and evolving deceptive tactics. My foray into this dynamic landscape involved harnessing the power of machine learning to detect and combat fraudulent activities.
-          `,
-        },
-        {
-            title: "Revolutionizing Feedback: Enhancing Employee Engagement at Claas",
-            date: "August - October 2023",
-            content: `
-            During my tenure at Claas, I played a pivotal role in creating a robust feedback system. This system empowers employees to provide suggestions for improving company processes. Approved suggestions are rewarded, fostering a culture of innovation and continuous improvement within the organization.
-          `,
-        },
-        {
-            title: "Internship at MTAB Technology Center: Elevating Landing Page, SEO, and Marketing Automation",
-            date: "November 2023",
-            content: `
-              During my internship at MTAB Technology Center, I focused on enhancing their landing page and SEO strategies. Additionally, I actively contributed to the implementation of marketing automation for their software, streamlining and optimizing the marketing processes.
-            `,
-        },
-        {
-            title: "CollabJunction: Spearheading Technical Initiatives Remotely",
-            date: "May 2023 - Now",
-            content: `
-            I currently hold the position of Technical Head at CollabJunction, a company dedicated to facilitating collaboration among businesses, colleges and artists. My role involves spearheading technical initiatives to enhance collaborative capabilities.
-          `,
-        },
-    ];
+const articlesData = [
+    {
+        title: "Hackathon Mentorship: Nurturing Innovation at VIT Vellore",
+        date: "June 2023",
+        content: `
+        Served as a mentor at an innovative Hackathon co-hosted by the Entrepreneurship Cell (E-Cell) and ISTE at VIT. My role involved advising participants on enhancing the feasibility and stability of their projects.
+      `,
+    },
+    {
+        title: "Unmasking the Shadows: A Dive into Online Payment Fraud Detection with Machine Learning",
+        date: "August 2023 - October 2023",
+        content: `
+        The battle against online payment fraud has become an intricate dance between security measures and evolving deceptive tactics. Explored ML for detecting online payment fraud, navigating evolving security measures.
+      `,
+    },
+    {
+        title: "Revolutionizing Feedback: Enhancing Employee Engagement at Claas",
+        date: "August - October 2023",
+        content: `
+        During my tenure at Claas, I played a pivotal role in creating a robust feedback system. This system empowers employees to provide suggestions for improving company processes. Approved suggestions are rewarded, fostering a culture of innovation and continuous improvement within the organization.
+      `,
+    },
+    {
+        title: "Internship at MTAB Technology Center (Nov 2023)",
+        date: "November 2023",
+        content: "Focused on enhancing landing page and SEO strategies, and actively contributed to marketing automation implementation for streamlined processes."
+    },
+    {
+        title: "CollabJunction: Spearheading Technical Initiatives Remotely",
+        date: "May 2023 - Now",
+        content: "As Technical Head at CollabJunction, I lead remote technical initiatives to enhance collaborative capabilities among businesses, colleges, and artists."
+    }
+];
+
+const Articles = () => {
     return (
         <div className='flex lg:flex-row flex-col sm:pt-[450px] pt-[380px]'>
             <div className='lg:p-4 my-10 space-y-5'>
@@ -115,7 +112,7 @@ const Articles = () => {
 
                 </div>
             </div>
-            
+
             <div className='space-y-10 lg:w-[70%] w-full my-4 mr-4'>
                 {articlesData.map((article, index) => (
                     <div key={index} className='relative flex flex-col items-start p-4 group'>

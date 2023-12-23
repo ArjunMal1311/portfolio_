@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -67,7 +68,7 @@ const ProjectPage = () => {
                 </p>
             </div>
 
-           
+
             <div className='mt-16 flex flex-wrap md:flex-row flex-col pr-3'>
                 {projects.map((project, index) => (
                     <div key={index} className="group relative flex flex-col items-start md:w-[28%] w-full m-5 my-10">
@@ -82,8 +83,8 @@ const ProjectPage = () => {
                         </h2>
                         <p className="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">{project.description}</p>
                         <div className="mt-6 flex text-sm font-medium transition group-hover:text-teal-500 text-zinc-200 items-center space-x-3 cursor-pointer">
-                            {project.link && <Link href={project.link} className="border px-3 py-1 rounded-lg">Project Demo</Link>}
-                            {project.github && <Link href={project.github} className="border px-3 py-1 rounded-lg">Github</Link>}
+                            {project.link && <Link href={project.link} className="relative z-[999] border px-3 py-1 rounded-lg">Project Demo</Link>}
+                            {project.github && <Link href={project.github} className="relative z-[999] border px-3 py-1 rounded-lg">Github</Link>}
                         </div>
                     </div>
                 ))}

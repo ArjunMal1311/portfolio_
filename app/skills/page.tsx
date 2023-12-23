@@ -14,13 +14,13 @@ const data = [
         items: [
             {
                 title: 'AI/ML Certifications',
-                link: '/',
-                description: 'Embarked on an enriching AIML internship journey with SmartInternz and the prestigious Google Externship Program. Acquired hands-on experience in cutting-edge Artificial Intelligence and Machine Learning technologies.',
+                link: '/SmartInternz.pdf',
+                description: 'Hands-on experience in cutting-edge AI/ML technologies with SmartInternz and Google Externship Program.',
             },
             {
                 title: 'MERN Certification from Ethnus',
-                link: '/',
-                description: 'Mastered the MERN (MongoDB, Express.js, React, Node.js) stack through a comprehensive certification program with Ethnus. Gained proficiency in developing full-stack applications with modern web technologies.',
+                link: '/MERN.pdf',
+                description: 'Mastered the MERN stack with Ethnus, gaining proficiency in full-stack development.',
             },
         ],
     },
@@ -31,12 +31,12 @@ const data = [
             {
                 title: 'Best Mentor Award - Hackathon',
                 link: '',
-                description: 'Honored with the Best Mentor Award at a prestigious hackathon, recognized for providing unparalleled guidance and support. Served as a catalyst for success by mentoring and inspiring aspiring developers.',
+                description: 'Honored for providing unparalleled guidance at a prestigious hackathon.',
             },
             {
                 title: 'Level 7 (Expert) - DSA Coding Ninjas',
                 link: 'https://www.codingninjas.com/studio/profile/shandle',
-                description: 'Attained the esteemed status of a Level 7 Expert in Data Structures and Algorithms at Coding Ninjas. Demonstrated proficiency in solving complex coding challenges and showcased expertise in algorithmic problem-solving.',
+                description: 'Attained Level 7 Expert status in Data Structures and Algorithms at Coding Ninjas.',
             },
         ],
     },
@@ -47,12 +47,12 @@ const data = [
             {
                 title: 'JavaScript Summit - SpeakJS',
                 link: '/',
-                description: 'Took the stage at the JavaScript Summit 2022, captivating the audience with insights into the latest trends and best practices in JavaScript development. Explored the dynamic world of web technologies and shared strategies for building robust and scalable applications.',
+                description: 'Captivated the audience at JavaScript Summit 2022 with insights into JavaScript development.',
             },
             {
                 title: 'Machine Learning Conference 2023',
                 link: '/',
-                description: 'Distinguished speaker at the Machine Learning Conference 2023, delivering a compelling talk on the forefront of advancements and practical applications in machine learning. Explored the transformative impact of ML on diverse industries.',
+                description: 'Distinguished speaker at Machine Learning Conference 2023, exploring ML applications.',
             },
         ],
     },
@@ -62,13 +62,13 @@ const data = [
         items: [
             {
                 title: 'Personal Finance Tracker YouTube',
-                link: 'YouTube link goes here',
-                description: 'Presented an engaging video on my YouTube channel, guiding viewers through the creation of a personalized finance tracker with an integrated calculator. Empowered users to take control of their financial journey.',
+                link: 'https://youtu.be/z0R1I4alEhA',
+                description: 'Engaging video guiding viewers through creating a personalized finance tracker.',
             },
             {
                 title: 'One Shot Tailwind CSS with Landing Page',
-                link: 'YouTube link goes here',
-                description: 'Unleashed creativity in a one-shot tutorial on crafting a stunning landing page using Tailwind CSS. Simplified the complexities of modern CSS, making web design a breeze for enthusiasts.',
+                link: 'https://youtu.be/EWVtxMM6V04',
+                description: 'One-shot tutorial on crafting a stunning landing page using Tailwind CSS.',
             },
         ],
     },
