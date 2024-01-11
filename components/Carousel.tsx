@@ -1,26 +1,29 @@
 import Image from 'next/image'
 import React from 'react'
-import { Homenaje } from 'next/font/google'
-const HomenajeFont = Homenaje({ subsets: ["latin"], weight: "400" })
+import { Salsa } from 'next/font/google'
+const Salsa_Font = Salsa({ subsets: ["latin"], weight: "400" })
 
 const Carousel = () => {
     return (
-        <div className='pt-10 absolute left-0 right-0 sm:overflow-hidden overflow-x-scroll overflow-y-hidden'>
+        <div className='pt-10 absolute left-0 right-0 overflow-hidden'>
             <div className='-my-4 flex justify-center gap-8 py-4 sm:w-full'>
                 <div className='relative h-80 flex-none overflow-hidden rounded-xl bg-zinc-800 w-72 sm:rounded-2xl sm:rotate-2'>
-                    <div className=' flex justify-center items-center w-full h-full'>
+                    <div className='flex justify-center items-center w-full h-[80%] flex-col'>
                         <div className="loader">
                             <span></span>
                         </div>
                     </div>
+
+                    <div className={`text-white text-2xl text-center ${Salsa_Font.className}`}>Pathfinder</div>
                 </div>
 
 
 
                 <div className='relative h-80 flex-none overflow-hidden rounded-xl bg-zinc-800 w-72 sm:rounded-2xl sm:-rotate-2'>
-                    <div className='flex justify-center items-center w-full h-full'>
+                    <div className='flex justify-center items-center w-full h-[80%] flex-col'>
                         <div className="loader-Square"></div>
                     </div>
+                    <div className={`text-white text-2xl text-center ${Salsa_Font.className}`}>Energetic Achiever</div>
                 </div>
 
 
@@ -77,7 +80,7 @@ const Carousel = () => {
 
 
                 <div className='relative h-80 flex-none overflow-hidden rounded-xl bg-zinc-800 w-72 sm:rounded-2xl rotate-4'>
-                    <div className='flex justify-center items-center w-full h-full'>
+                    <div className='flex justify-center items-center w-full h-[80%] flex-col'>
                         <div aria-label="Orange and tan hamster running in a metal wheel" role="img" className="wheel-and-hamster">
                             <div className="wheel"></div>
                             <div className="hamster">
@@ -97,11 +100,13 @@ const Carousel = () => {
                             <div className="spoke"></div>
                         </div>
                     </div>
+
+                    <div className={`text-white text-2xl text-center ${Salsa_Font.className}`}>Persistent Progress</div>
                 </div>
 
 
                 <div className='relative h-80 flex-none overflow-hidden rounded-xl bg-zinc-800 w-72 sm:rounded-2xl sm:-rotate-3'>
-                    <div className='flex justify-center items-center w-full h-full'>
+                    <div className='flex justify-center items-center w-full h-[80%] flex-col'>
                         <div className="loader-new">
                             <div className="loader-square"></div>
                             <div className="loader-square"></div>
@@ -112,6 +117,8 @@ const Carousel = () => {
                             <div className="loader-square"></div>
                         </div>
                     </div>
+
+                    <div className={`text-white text-2xl text-center ${Salsa_Font.className}`}>Mindful Solutions</div>
                 </div>
             </div>
         </div >
