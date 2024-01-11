@@ -1,12 +1,24 @@
 import Image from 'next/image'
 import React from 'react'
 import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { Dancing_Script } from 'next/font/google'
+const Dancing_Script_Font = Dancing_Script({ weight: "400", subsets: [] })
 
 const Introduction = () => {
     return (
         <div className='space-y-8'>
             <Image src={"/dp.png"} className='rounded-full object-cover bg-zinc-800 h-16 w-16' alt='' width={512} height={512} />
 
+            <div className={`${Dancing_Script_Font.className} text-white sm:text-6xl text-4xl`}>Arjun Malhotra</div>
+
+            {/* <h1 className='head_introduction text-xl flex'>
+                Dive Into
+                <span className="slider">
+                    <span className="slider__word">Ideas</span>
+                    <span className="slider__word">Tech</span>
+                    <span className="slider__word">Art</span>
+                </span>
+            </h1> */}
             <div className='max-w-2xl'>
                 <div className='text-4xl font-bold tracking-tight text-zinc-100 sm:text-5xl sm:leading-[60px]'>
                     Software Engineer, Web Developer, Machine Learning and many more!
