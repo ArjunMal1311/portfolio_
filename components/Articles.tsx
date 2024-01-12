@@ -113,7 +113,7 @@ const Articles = () => {
                 </div>
             </div>
 
-            <div className='space-y-10 lg:w-[70%] w-full my-4 mr-4'>
+            <div className='space-y-10 lg:w-[70%] w-full my-12 mr-4'>
                 {articlesData.map((article, index) => (
                     <div key={index} className='relative flex flex-col items-start p-4 group'>
                         <h2 className='text-base font-semibold tracking-tight text-zinc-100'>
