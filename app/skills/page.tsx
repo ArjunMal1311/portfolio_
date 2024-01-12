@@ -34,7 +34,7 @@ const data = [
                 description: 'Honored for providing unparalleled guidance at a prestigious hackathon.',
             },
             {
-                title: 'Level 7 (Expert) - DSA Coding Ninjas',
+                title: 'Level 8 (Master) - DSA Coding Ninjas',
                 link: 'https://www.codingninjas.com/studio/profile/shandle',
                 description: 'Attained Level 8 Master status in Data Structures and Algorithms at Coding Ninjas.',
             },

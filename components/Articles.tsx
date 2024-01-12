@@ -77,11 +77,13 @@ const Articles = () => {
                     <p className="mt-2 text-sm text-zinc-400">Contact me through mail</p>
 
                     <div className='text-xs mt-3 border-2 border-zinc-700/40 rounded-lg p-2 px-4 text-zinc-400 flex justify-between items-center'>
-                        <div>
+                        <div className=' relative z-[999]'>
                             hiarjun.malhotra2002@gmail.com
                         </div>
 
-                        <LuSendHorizonal />
+                        <Link href={"mailto:hiarjun.malhotra2002@gmail.com"} className='hover:text-white cursor-pointer relative z-[999]'>
+                            <LuSendHorizonal />
+                        </Link>
                     </div>
                 </div>
 
