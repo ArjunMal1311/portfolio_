@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import { Dancing_Script } from 'next/font/google'
+import Link from 'next/link'
 const Dancing_Script_Font = Dancing_Script({ weight: "400", subsets: [] })
 
 const Introduction = () => {
@@ -31,10 +32,9 @@ const Introduction = () => {
             </div>
 
             <div className='flex space-x-6'>
-                <div className='transition-all duration-500 cursor-pointer hover:text-zinc-600 text-zinc-400'><FaTwitter size={22} /></div>
-                <div className='transition-all duration-500 cursor-pointer hover:text-zinc-600 text-zinc-400'><FaInstagram size={22} /></div>
-                <div className='transition-all duration-500 cursor-pointer hover:text-zinc-600 text-zinc-400'><FaGithub size={22} /></div>
-                <div className='transition-all duration-500 cursor-pointer hover:text-zinc-600 text-zinc-400'><FaLinkedin size={22} /></div>
+                <Link href={"https://github.com/ArjunMal1311/"} className='transition-all duration-500 cursor-pointer hover:text-zinc-600 text-zinc-400'><FaGithub size={22} /></Link>
+                <Link href={"https://www.linkedin.com/in/arjun-malhotra-51967523b/"} className='transition-all duration-500 cursor-pointer hover:text-zinc-600 text-zinc-400'><FaLinkedin size={22} /></Link>
+                <Link href={"https://www.instagram.com/_arjun_malhotra_/"} className='transition-all duration-500 cursor-pointer hover:text-zinc-600 text-zinc-400'><FaInstagram size={22} /></Link>
             </div>
         </div>
     )
