@@ -21,10 +21,10 @@
 }
 
 .logos-slide {
-  animation: 40s slide infinite linear;
+  animation: 40s slide_icons infinite linear;
 }
 
-@keyframes slide {
+@keyframes slide_icons {
   from {
     transform: translateX(0);
   }
