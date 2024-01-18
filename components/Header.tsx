@@ -4,7 +4,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { FaArrowDown, FaArrowUp } from "react-icons/fa";
-import { usePathname } from 'next/navigation'; 
+import { usePathname } from 'next/navigation';
 
 export interface Link {
   name: string;
@@ -41,12 +41,21 @@ export default function Header() {
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
+      const menuButton = document.getElementById("menu-button");
       const menu = document.getElementById("mobile-menu");
 
-      if (menu && !menu.contains(event.target as Node) && componentRef.current && !componentRef.current.contains(event.target as Node)) {
+      if (
+        menu &&
+        menuButton &&
+        !menu.contains(event.target as Node) &&
+        !menuButton.contains(event.target as Node) &&
+        componentRef.current &&
+        !componentRef.current.contains(event.target as Node)
+      ) {
         closeMenu();
       }
     };
+
 
     window.addEventListener("click", handleClickOutside);
 
@@ -65,15 +74,12 @@ export default function Header() {
 
       <div className="sm:hidden flex justify-end items-end bg-[#18181b]">
         <button
+          id="menu-button"
           onClick={() => setIsOpen(!isOpen)}
-          className=" m-4 px-5 text-[14px] py-2 border rounded-full text-[#E4E4E7] border-gray-500 flex items-center space-x-2 bg-[#27272AE6]"
+          className="m-4 px-5 text-[14px] py-2 border rounded-full text-[#E4E4E7] border-gray-500 flex items-center space-x-2 bg-[#27272AE6]"
         >
-          <div>
-            Menu
-          </div>
-          <div>
-            {!isOpen ? <FaArrowDown size={12} /> : <FaArrowUp size={12} />}
-          </div>
+          <div>Menu</div>
+          <div>{!isOpen ? <FaArrowDown size={12} /> : <FaArrowUp size={12} />}</div>
         </button>
       </div>
 

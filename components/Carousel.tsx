@@ -14,7 +14,7 @@ const Carousel = () => {
                         </div>
                     </div>
 
-                    <div className={`text-white text-2xl text-center ${Salsa_Font.className}`}>Pathfinder</div>
+                    <div className={`text-white text-2xl text-center sm:flex hidden items-center justify-center ${Salsa_Font.className}`}>Pathfinder</div>
                 </div>
 
 
@@ -23,7 +23,7 @@ const Carousel = () => {
                     <div className='flex justify-center items-center w-full h-[80%] flex-col'>
                         <div className="loader-Square"></div>
                     </div>
-                    <div className={`text-white text-2xl text-center ${Salsa_Font.className}`}>Energetic Achiever</div>
+                    <div className={`text-white text-2xl text-center sm:flex hidden items-center justify-center ${Salsa_Font.className}`}>Energetic Achiever</div>
                 </div>
 
 
@@ -101,7 +101,7 @@ const Carousel = () => {
                         </div>
                     </div>
 
-                    <div className={`text-white text-2xl text-center ${Salsa_Font.className}`}>Persistent Progress</div>
+                    <div className={`text-white text-2xl text-center sm:flex hidden items-center justify-center ${Salsa_Font.className}`}>Persistent Progress</div>
                 </div>
 
 
@@ -118,7 +118,7 @@ const Carousel = () => {
                         </div>
                     </div>
 
-                    <div className={`text-white text-2xl text-center ${Salsa_Font.className}`}>Mindful Solutions</div>
+                    <div className={`text-white text-2xl text-center sm:flex hidden items-center justify-center ${Salsa_Font.className}`}>Mindful Solutions</div>
                 </div>
             </div>
         </div >
