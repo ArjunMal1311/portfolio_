@@ -6,6 +6,13 @@ import { FaLink } from 'react-icons/fa';
 
 const projects = [
     {
+        name: 'Website Builder',
+        description: 'Created a Website Builder using NextJS, TailwindCSS, MongoDB, NodeJS, ExpressJS.',
+        link: 'https://webuiilder.vercel.app/',
+        imgurl: "/blog_breeeeze.jpg",
+        github: "https://github.com/ArjunMal1311/website-builder"
+    },
+    {
         name: 'Discord Clone',
         description: 'Created a Discord clone mirroring the features of the original discord.',
         link: 'https://mydiscord.vercel.app/',

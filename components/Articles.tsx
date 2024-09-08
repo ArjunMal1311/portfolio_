@@ -62,7 +62,14 @@ const articlesData = [
         title: "CollabJunction: Spearheading Technical Initiatives Remotely",
         date: "May 2023 - Now",
         content: "As Technical Head at CollabJunction, I lead remote technical initiatives to enhance collaborative capabilities among businesses, colleges, and artists."
-    }
+    },
+    {
+        title: "Portanite",
+        date: "Coming Soon",
+        content: `
+        Build, collaborate, inspire, and with our open-source portfolio community. Empower the Community with Your Contributions.
+      `,
+    },
 ];
 
 const Articles = () => {

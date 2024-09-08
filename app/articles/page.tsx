@@ -44,6 +44,13 @@ const Page = () => {
             I currently hold the position of Technical Head at CollabJunction, a company dedicated to facilitating collaboration among businesses, colleges and artists. My role involves spearheading technical initiatives to enhance collaborative capabilities.
           `,
         },
+        {
+            title: "Portanite",
+            date: "Coming Soon",
+            content: `
+            Build, collaborate, inspire, and with our open-source portfolio community. Empower the Community with Your Contributions.
+          `,
+        },
     ];
 
     return (
