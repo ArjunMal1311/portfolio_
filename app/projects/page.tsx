@@ -6,6 +6,27 @@ import { FaLink } from 'react-icons/fa';
 
 const projects = [
     {
+        name: "Portanite",
+        description: "platform for discovering, customizing, and sharing portfolios, landing pages, dashboards, and more",
+        link: "https://portanite.in",
+        imgurl: "/portanite.webp",
+        github: ""
+    },
+    {
+        name: "Collab Junction",
+        description: "platform connecting artists, speakers, and event organizers for collaborations",
+        link: "https://collabjn.in",
+        imgurl: "/cj.webp",
+        github: ""
+    },
+    {
+        name: "Fans Flow on Chain",
+        description: "A platform for creating and managing fan communities on blockchain.",
+        link: "",
+        imgurl: "/vit_bay.jpg",
+        github: "https://github.com/ArjunMal1311/fans_flow_on_chain"
+    },
+    {
         name: 'Website Builder',
         description: 'Created a Website Builder using NextJS, TailwindCSS, MongoDB, NodeJS, ExpressJS.',
         link: 'https://webuiilder.vercel.app/',
@@ -90,7 +111,7 @@ const ProjectPage = () => {
                         </h2>
                         <p className="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">{project.description}</p>
                         <div className="mt-6 flex text-sm font-medium transition group-hover:text-teal-500 text-zinc-200 items-center space-x-3 cursor-pointer">
-                            {project.link && <Link href={project.link} className="relative z-[999] border px-3 py-1 rounded-lg">Project Demo</Link>}
+                            {project.link && <Link href={project.link} className="relative z-[999] border px-3 py-1 rounded-lg">Visit</Link>}
                             {project.github && <Link href={project.github} className="relative z-[999] border px-3 py-1 rounded-lg">Github</Link>}
                         </div>
                     </div>

@@ -26,7 +26,7 @@ const WorkExperience = [
     {
         title: 'Collab Junction',
         role: 'Co-founder & CTO',
-        date: 'May 2023 - Present',
+        date: 'May 2023 - Dec 2024',
         imageurl: "/cj.webp"
     },
 ]
